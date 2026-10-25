@@ -1,0 +1,16 @@
+name = "wap-chat"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wap-chat-db"
+database_id = "REPLACE_WITH_YOUR_D1_ID"   # 一键部署时会自动替换为新建数据库的 ID
+
+[secrets]
+required = [
+  "CHAT_PASSWORD",
+  "WEBDAV_URL",
+  "WEBDAV_USERNAME",
+  "WEBDAV_PASSWORD"
+]
