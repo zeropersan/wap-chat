@@ -27,7 +27,7 @@
 
 - **现代前端**：`https://<你的-worker>.workers.dev/` （默认滚动模式）
 - **分页模式**：`https://<你的-worker>.workers.dev/?mode=paged`
-- **功能机 WAP**：`https://<你的-worker>.workers.dev/wap`
+- **功能机 WAP**：`http://<你的-worker>.workers.dev/wap`(功能机https可能不受支持)
 
 ## 部署后补设 Secret（如果一键部署时未填）
 
@@ -38,3 +38,6 @@
 - 分页大小：修改 `src/worker.js` 中的 `PAGE_SIZE`
 - 附件大小上限：修改 `MAX_UPLOAD_BYTES`（默认 90MB，受 Cloudflare CDN 100MB 限制）
 - WebDAV 存储目录：修改 `WEBDAV_BASE_DIR`（默认 `/chat-attachments`）
+
+## 提示
+在必要时请自行更改SSL/TLS设置以确保最佳体验!
