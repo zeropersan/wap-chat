@@ -1,0 +1,11 @@
+{
+  "name": "wap-chat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler d1 migrations apply DB --remote && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
